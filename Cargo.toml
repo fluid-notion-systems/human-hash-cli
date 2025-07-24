@@ -9,6 +9,10 @@ clap = { version = "4", features = ["derive"] }
 human-hash = { git = "https://github.com/jamesmunns/human-hash-rs.git" }
 uuid = { version = "1.0", features = ["v4"] }
 
+[[bin]]
+name = "human-hash"
+path = "src/main.rs"
+
 [profile.release]
 lto = true
 codegen-units = 1
